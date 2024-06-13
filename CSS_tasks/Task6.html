@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-icon {
+            text-align: center;
+        }
+
+        .profile-icon img {
+            width: 150px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .login-btn {
+            width: 100%;
+            background-color: #4CAF50;
+            margin-top: 10px;
+        }
+
+        .cancel-btn {
+            background-color: #f44336;
+            width: 75px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .remember-me input {
+            margin-right: 5px;
+        }
+
+        .forgot-password {
+            color: black;
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="profile-icon">
+            <img src="profile-icon.png" alt="Profile Icon">
+        </div>
+        <form>
+            <p><b>Username</b></p>
+            <input type="text" placeholder="Enter Username">
+            <p><b>Password</b></p>
+            <input type="password" placeholder="Enter Password">
+            <button type="submit" class="login-btn">Login</button>
+            <label class="remember-me">
+                <input type="checkbox"> Remember me
+            </label>
+            <div class="button-container">
+                <button type="button" class="cancel-btn">Cancel</button>
+                <label class="forgot-password">
+                    Forgot <a href="#" style="color: black;">password?</a>
+                </label>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

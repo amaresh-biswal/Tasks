@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Shapes</title>
+    <style>
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: #A6DDEC;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-radius: 30px;
+        }
+
+        th {
+            padding: 10px;
+            text-align: center;
+        }
+
+        td {
+            padding: 10px;
+        }
+        .allshapes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: #fff;
+        }
+        .shapes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .shape {
+            width: 100px;
+            height: 60px;
+            border: 2px solid #A2C75F;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .oval {
+            border-radius: 50%;
+        }
+        .rounded{
+            border-radius: 20px;
+        }
+        .half-rounded {
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .slight-rounded {
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="allshapes">
+        <div class="shapes">
+            <div class="shape"></div>
+            <div class="shape slight-rounded"></div>
+            <div class="shape rounded"></div>
+            <div class="shape slight-rounded"></div>
+            <div class="shape"></div>
+            <div class="shape rounded"></div>
+            <div class="shape oval"></div>
+            <div class="shape"></div>
+            <div class="shape half-rounded"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

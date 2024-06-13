@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Stylling</title>
+    <style>
+        .full-body{
+            background-color: #A22A57;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .form-body{
+            margin: 50px;
+            background-color: #752041;
+            padding: 20px;
+        }
+        button{
+            display: block;
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-body">
+        <div class="form-body">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" placeholder="your name"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" placeholder="your email"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <label>Male:
+                            <input type="radio" name="gender">
+                        </label>
+                        <label>Female:
+                            <input type="radio" name="gender">
+                        </label>
+                        <label>Other:
+                            <input type="radio" name="gender">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Zip Code:</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>About:</td>
+                    <td><textarea rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button><b>Register</b></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
